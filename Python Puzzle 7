@@ -1,0 +1,8 @@
+##Write a Python program to check a given list of integers where the sum of the first i integers is i
+def aisa(numlist):
+  for i in range(len(numlist)):
+    if sum(numlist[:i]) != i:
+      return False
+  return True
+
+print(aisa([1,1,1]))
