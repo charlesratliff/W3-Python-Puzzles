@@ -1,0 +1,7 @@
+##Write a Python program that accept an integer test whether an integer greater than 4^4 and which is 4 mod 34
+def fours(num):
+  return num > 4**4 and num % 34 == 4
+
+print(fours(922))
+print(fours(914))
+print(fours(854))
