@@ -1,0 +1,9 @@
+##Write a Python program to split a string of words separated by commas and spaces into two lists, words and separators
+import re
+
+def separate(phrase):
+    split = re.split(r'([ ,]+)', phrase)
+    print(split)
+    return(split[::2], split[1::2])
+
+separate('this is a test, phrase')
