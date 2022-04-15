@@ -1,0 +1,12 @@
+##Write a Python program find the longest string of a given list of strings
+def longstr(strlist):
+    longest = strlist[0]
+    for i in range(len(strlist)):
+        if len(strlist[i]) > len(longest):
+            longest = strlist[i]
+        elif len(strlist[i]) == len(longest):
+            longest = (longest, strlist[i])
+    return longest
+
+
+print(longstr(['cat', 'car', 'fear', 'center']))
