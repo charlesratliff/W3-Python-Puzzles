@@ -1,0 +1,10 @@
+##Write a Python program to find the strings in a given list, starting with a given prefix
+def prefixes(prefix,strlist):
+    matches = []
+    for str in strlist:
+        if prefix == str[:len(prefix)]:
+            matches.append(str)
+    return matches
+
+
+print(prefixes( 'ca',('cat', 'car', 'fear', 'center')))
