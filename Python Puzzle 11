@@ -1,0 +1,9 @@
+##Write a Python program to find the indexes of numbers of a given list below a given threshold
+def indexbelow(threshold, nums):
+    indicies = []
+    for i in range(len(nums)):
+        if nums[i] < threshold:
+            indicies.append(i)
+    return indicies
+
+print(indexbelow(100,(0, 12, 45, 3, 4923, 322, 105, 29, 15, 39, 55)))
