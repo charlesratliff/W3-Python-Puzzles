@@ -1,0 +1,9 @@
+##Write a Python program to find the lengths of a given list of non-empty strings
+def strlengths(strlist):
+    lenlist = []
+    for i in strlist:
+        lenlist.append(len(i))
+    return lenlist
+
+
+print(strlengths(['cat', 'car', 'fear', 'center']))
