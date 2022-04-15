@@ -1,0 +1,6 @@
+##Write a Python program to check whether the given strings are palindromes or not. Return True, False
+def palindrome(word):
+    return word == word[::-1]
+
+
+print(palindrome('racecar'))
